@@ -16,9 +16,21 @@ This Python script implements a **Caesar Cipher**, a classic encryption techniqu
 - **`caesar_cipher(message, shift)`**: Core function that performs encryption.
 - **User Input**: Prompts the user to enter a message and a shift key.
 
+🛠 Notes
+Only uppercase letters are processed for encryption.
+
+The cipher is symmetrical, meaning you can decrypt by using the negative of the original shift value.
+
+
 ## 💻 Usage
 
-### Run the Script
+  ### Run the Script
+  ```bash
+  python caesar_cipher.py
+  ```
 
-```bash
-python caesar_cipher.py
+Decryption
+To decrypt a message, simply use the negative of the shift key used during encryption.
+
+  Example ------>       caesar_cipher("KHOOR, ZRUOG!", -3)
+                        # Output: HELLO, WORLD!
